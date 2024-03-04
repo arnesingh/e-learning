@@ -12,6 +12,7 @@ import {
   AntDesign,
   Feather,
 } from "@expo/vector-icons";
+import HomeScreenNavigation from "./HomeScreenNavigation";
 
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +21,7 @@ export default function TabNavigation() {
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen
         name="Home"
-        component={HomeScreen}
+        component={HomeScreenNavigation}
         options={{
           tabBarIcon: ({ size, color }) => (
             <Ionicons name="home" size={size} color={color} />
